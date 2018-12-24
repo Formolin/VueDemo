@@ -8,12 +8,19 @@ Vue.use(MintUI)
 
 import '../static/mui/css/mui.min.css'
 import '../static/mui/css/icons-extra.css'
+// 导入路由的包
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+//导入自己的路由模块
+import router from './router.js'
+
 
 Vue.config.productionTip = false
-console.log('ok')
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  router//挂在路由对象到vm实例上
 })
