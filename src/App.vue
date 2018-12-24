@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- 顶部区域 -->
-    <mt-header fixed title="爱尚实训"></mt-header>
+    <mt-header fixed title="爱尚实训Vue项目"></mt-header>
     <!-- 中部 -->
     <!-- 底部 -->
     <nav class="mui-bar mui-bar-tab">
@@ -26,7 +26,7 @@
         <span class="mui-tab-label">搜索</span>
       </router-link >
     </nav>
-    <h1>test</h1>
+    <router-view></router-view>
   </div>
 </template>
 
